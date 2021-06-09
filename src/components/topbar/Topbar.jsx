@@ -20,7 +20,7 @@ function Topbar({ menuOpen, setMenuOpen }) {
                 <div className="right">
                     <div className="humburger" onClick={() => setMenuOpen(!menuOpen)}>
                         {
-                            menuOpen ? <Menu /> : <Clear />
+                            menuOpen ? <Clear /> : <Menu />
                         }
                     </div>
                 </div>
