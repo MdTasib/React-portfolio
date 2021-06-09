@@ -2,9 +2,56 @@
 
 .topbar {
     background: $main;
+    color: white;
     width: 100%;
     height: 70px;
     position: fixed;
     top: 0;
     z-index: 2;
+    transition: all 1s ease;
+
+    .wrapper {
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+            display: flex;
+            align-items: center;
+
+            .itemContainer {
+                margin-left: 30px;
+                display: flex;
+                align-items: center;
+
+                .icon {
+                    font-size: 18px;
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+
+            .logo {
+                color: inherit;
+                font-size: 38px;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+
+        .right {
+            .humburger {
+                cursor: pointer;
+            }
+        }
+    }
+    &.active {
+        background: white;
+        color: $main;
+    }
 }
