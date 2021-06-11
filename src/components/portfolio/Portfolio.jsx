@@ -9,7 +9,7 @@ import {
 } from '../../data';
 
 function Portfolio() {
-    const [selected, setSelected] = useState('featured');
+    const [selected, setSelected] = useState('javascript');
     const [data, setData] = useState([]);
 
     const list = [
