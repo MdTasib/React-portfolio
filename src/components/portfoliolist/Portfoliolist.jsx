@@ -1,9 +1,9 @@
 import './portfoliolist.scss';
 
-function Portfoliolist({ title }) {
+function Portfoliolist({ id, title, active, setSelected }) {
     return (
         <div>
-            <li className='portfoliolist'>{title}</li>
+            <li className={active ? 'portfoliolist active' : 'portfoliolist'} onClick={() => setSelected(id)}>{title}</li>
         </div>
     );
 }
