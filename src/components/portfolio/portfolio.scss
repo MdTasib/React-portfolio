@@ -16,23 +16,10 @@
         list-style: none;
         display: flex;
 
-        li {
-            margin-right: 30px;
-            font-size: 16px;
-            padding: 10px;
-            font-weight: 500;
-            border-radius: 10px;
-            cursor: pointer;
-
-            &.active {
-                background: $main;
-                color: white;
-            }
-        }
     }
 
     .container {
-        width: 80%;
+        width: 70%;
         display: flex;
         align-items: center;
         justify-content: center;
