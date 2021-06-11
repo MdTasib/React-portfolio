@@ -1,29 +1,54 @@
 import './portfolio.scss';
-import burjAlArab from '../../images/bruj-al-arab.png';
 import Portfoliolist from '../portfoliolist/Portfoliolist';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import {
+    featuredPortfolio,
+    reactPortfolio,
+    javascriptPortfolio,
+    mernPortfolio
+} from '../../data';
 
 function Portfolio() {
     const [selected, setSelected] = useState('featured');
+    const [data, setData] = useState([]);
 
     const list = [
         {
-            id: 'featured',
-            title: 'Featured'
-        },
-        {
-            id: 'mern',
-            title: 'MERN Stack'
+            id: 'javascript',
+            title: 'Javascript'
         },
         {
             id: 'react',
             title: 'React Js'
         },
         {
-            id: 'javascript',
-            title: 'Javascript'
-        }
+            id: 'mern',
+            title: 'MERN Stack'
+        },
+        {
+            id: 'featured',
+            title: 'Featured'
+        },
     ]
+
+    useEffect(() => {
+        switch (selected) {
+            case 'featured':
+                setData(featuredPortfolio);
+                break;
+            case 'react':
+                setData(reactPortfolio);
+                break;
+            case 'mern':
+                setData(mernPortfolio);
+                break;
+            case 'javascript':
+                setData(javascriptPortfolio);
+                break;
+            default:
+                setData(featuredPortfolio);
+        }
+    }, [selected])
 
     return (
         <div className='portfolio' id='portfolio'>
@@ -34,30 +59,20 @@ function Portfolio() {
                 }
             </ul>
             <div className="container">
-                <div className="item">
-                    <img src={burjAlArab} alt="Burj Al Arab" />
-                    <h3>Burj Al Arab</h3>
-                </div>
-                <div className="item">
-                    <img src={burjAlArab} alt="Burj Al Arab" />
-                    <h3>Burj Al Arab</h3>
-                </div>
-                <div className="item">
-                    <img src={burjAlArab} alt="Burj Al Arab" />
-                    <h3>Burj Al Arab</h3>
-                </div>
-                <div className="item">
-                    <img src={burjAlArab} alt="Burj Al Arab" />
-                    <h3>Burj Al Arab</h3>
-                </div>
-                <div className="item">
-                    <img src={burjAlArab} alt="Burj Al Arab" />
-                    <h3>Burj Al Arab</h3>
-                </div>
-                <div className="item">
-                    <img src={burjAlArab} alt="Burj Al Arab" />
-                    <h3>Burj Al Arab</h3>
-                </div>
+                {
+                    data.map(d => (
+                        <div className="items">
+                            <div className="item">
+                                <img src={d.img} alt="" />
+                                <h3>{d.title}</h3>
+                            </div>
+                            <div className="source">
+                                <a href={d.preview}>Preview</a>
+                                <a href={d.source}>Source</a>
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     );
