@@ -1,0 +1,24 @@
+@import '../../global.scss';
+
+.footer {
+    background: rgb(241, 241, 241);
+    background-image: url('../../images/footer-bg.png');
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 70px;
+    text-align: center;
+
+    @include mobile {
+        line-height: 35px;
+    }
+    a {
+        text-decoration: none;
+    }
+    .icon {
+        padding: 10px 20px;
+        a {
+            margin: 0px 25px;
+        }
+    }
+}
