@@ -42,7 +42,7 @@ function Testimonials() {
             <div className="container">
                 {
                     clients.map((client, index) => (
-                        <div className={client.featured ? 'card featured' : 'card'}>
+                        <div key={index} className={client.featured ? 'card featured' : 'card'}>
                             <div className="top">
                                 <img src={rightArrow} alt="" className='left' />
                                 <img src={client.img} alt="" className='user' />

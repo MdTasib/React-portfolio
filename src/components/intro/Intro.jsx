@@ -30,7 +30,7 @@ function Intro() {
                     <h1>Mohammad Tasib</h1>
                     <h3>A Professional <span ref={textRef}></span></h3>
                 </div>
-                <a href="#portfolio">
+                <a href="#about">
                     <img src={arrowDown} alt="" />
                 </a>
             </div>

@@ -1,0 +1,81 @@
+@import '../../global.scss';
+
+.about {
+    color: white;
+    background: $main;
+    padding: 20px;
+
+    .myself {
+        padding: 20px 0;
+        display: flex;
+        @include mobile {
+            flex-direction: column;
+            padding: 10px 0px;
+        }
+
+        .left{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+
+            h4{
+                font-size: 44px;
+                font-weight: 700;
+                text-shadow: 4px 2px 4px cyan;
+
+                @include mobile {
+                    font-size: 26px;
+                }
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 18px;
+                padding: 30px 0;
+                line-height: 25px;
+                
+                @include mobile {
+                    font-size: 16px;
+                    line-height: 18px;
+                    padding: 10px 0px;
+                }
+            }
+            button {
+                width: 150px;
+                height: 35px;
+                color: $main;
+                cursor: pointer;
+                border-radius: 10px;
+                border: none;
+                font-weight: bold;
+                transition: all .5s ease;
+                border: 1px solid transparent;
+
+                &:hover {
+                    background: transparent;
+                    border: 1px solid white;
+                    color: white;
+                }
+
+            }
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img{
+                width: 350px;
+                height: 480px;
+
+                @include mobile {
+                    width: 200px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}

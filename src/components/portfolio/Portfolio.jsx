@@ -60,8 +60,8 @@ function Portfolio() {
             </ul>
             <div className="container">
                 {
-                    data.map(d => (
-                        <div className="items">
+                    data.map((d, index) => (
+                        <div key={index} className="items">
                             <div className="item">
                                 <img src={d.img} alt="" />
                                 <h3>{d.title}</h3>
