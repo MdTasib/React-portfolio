@@ -15,7 +15,7 @@ function Testimonials() {
             title: 'CEO of ALBI',
             img: client1,
             icon: youtube,
-            desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro impedit distinctio deserunt.'
+            desc: 'Lorem, ipsum dolor sit amet consectetur.'
         },
         {
             id: 2,
@@ -23,7 +23,7 @@ function Testimonials() {
             title: 'Co-Founder of DELKA',
             img: client2,
             icon: linkedin,
-            desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro impedit distinctio deserunt.',
+            desc: 'Lorem, ipsum dolor sit amet consectetur.',
             featured: true
         },
         {
@@ -32,7 +32,7 @@ function Testimonials() {
             title: 'Full Stack Developer',
             img: client3,
             icon: youtube,
-            desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro impedit distinctio deserunt.'
+            desc: 'Lorem, ipsum dolor sit amet consectetur.'
         },
     ]
 

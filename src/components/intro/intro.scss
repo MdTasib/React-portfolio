@@ -90,6 +90,10 @@
             img {
                 width: 35px;
                 animation: arrowBlink 1s infinite;
+
+                @include mobile {
+                    width: 25px;
+                }
             }
 
             @keyframes arrowBlink {

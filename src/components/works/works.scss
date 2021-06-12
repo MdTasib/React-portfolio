@@ -12,6 +12,10 @@
         position: absolute;
         cursor: pointer;
 
+        @include mobile {
+            display: none;
+        }
+
         &.left {
             left: 100px;
             transform: rotateY(180deg);
@@ -29,6 +33,13 @@
         left: 0;
         transition: all 1s ease-out;
 
+        @include mobile {
+            height: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .container {
             width: 100vw;
             display: flex;
@@ -36,13 +47,19 @@
             align-items: center;
 
             .item {
-                width: 700px;
+                width: 600px;
                 height: 100%;
                 background-color: white;
                 border-radius: 20px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @include mobile {
+                    width: 90%;
+                    height: 110px;
+                    margin: 7px 0;
+                }
 
                 .left {
                     flex: 4;
@@ -67,21 +84,43 @@
                             justify-content: center;
                             align-items: center;
 
+                            @include mobile {
+                                width: 30px;
+                                height: 30px;
+                            }
+
                             img {
                                 width: 25px;
+
+                                @include mobile {
+                                    width: 20px;
+                                }
                             }
                         }
                         h2 {
                             font-size: 20px;
+
+                            @include mobile {
+                                font-size: 12px;
+                            }
                         }
                         p {
                             font-size: 13px;
+
+                            @include mobile {
+                                display: none;
+                            }
                         }
                         span {
                             font-size: 12px;
                             cursor: pointer;
                             font-weight: 600;
                             text-decoration: underline;
+
+                            @include mobile{
+                                font-size: 10px;
+                                font-weight: normal;
+                            }
                         }
                     }
                 }
