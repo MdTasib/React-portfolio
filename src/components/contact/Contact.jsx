@@ -5,7 +5,7 @@ import { useState } from 'react';
 function Contact() {
     const [message, setMessage] = useState(false);
 
-    const handleSubmit = e => {
+    const sendEmail = e => {
         e.preventDefault();
         setMessage(true);
     }
@@ -17,12 +17,13 @@ function Contact() {
             </div>
             <div className="right">
                 <h2>Contact</h2>
-                <form onSubmit={handleSubmit}>
-                    <input type="text" placeholder='Your Email' />
-                    <textarea placeholder='Your Message'></textarea>
+                <form onSubmit={sendEmail}>
+                    <input type="text" placeholder='Your Name' name='name' required />
+                    <input type="email" placeholder='Your Email' name='email' required />
+                    <textarea placeholder='Your Message' name='message'></textarea>
                     <button type="submit">Send</button>
                     {
-                        message && <span>Thanks, I'll reply ASAP :)</span>
+                        message && <span>Not working. But Coming soon</span>
                     }
                 </form>
             </div>
