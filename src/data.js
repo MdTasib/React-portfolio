@@ -9,7 +9,7 @@ import pin from './images/pin.png';
 import textEditor from './images/text-editor.png';
 import weather from './images/weather.png';
 import blog from './images/blog.png';
-
+import filmmakers from './images/filmmakers.png';
 
 export const featuredPortfolio = [
     {
@@ -32,32 +32,39 @@ export const mernPortfolio = [
 export const reactPortfolio = [
     {
         id: 1,
+        title: 'Filmmakers',
+        img: filmmakers,
+        preview: 'https://excellen-filmmakers.netlify.app/',
+        source: 'https://github.com/MdTasib/React-Movie-App'
+    },
+    {
+        id: 2,
         title: 'COVID-19',
         img: covid,
         preview: 'https://covid-trakker.netlify.app/',
         source: 'https://github.com/MdTasib/COVID-19'
     },
     {
-        id: 2,
+        id: 3,
         title: 'PREMIUM LEAGUE',
         img: league,
         preview: 'https://premium-league.netlify.app/',
         source: 'https://github.com/MdTasib/React-project-premier-league'
     },
     {
-        id: 3,
+        id: 4,
         title: 'AGENCY WEBSITE',
         img: agency,
         preview: 'https://exclusive-agency.netlify.app/',
         source: 'https://github.com/MdTasib/React-Agency-Website'
     },
     {
-        id: 4,
+        id: 5,
         title: 'COVID_19_TRACKER',
         img: covidTracker,
         preview: 'https://trusting-ride-e7c618.netlify.app/',
         source: 'https://github.com/MdTasib/React-COVID_19_Tracker_Application'
-    }
+    },
 ]
 
 export const javascriptPortfolio = [
