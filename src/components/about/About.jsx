@@ -19,7 +19,10 @@ function About() {
 						out on time and in full. So if you have any questions or inputs,
 						please don't hesitate to contact me.
 					</p>
-					<a href='https://docs.google.com/document/d/10t5yWxzV1vWXKNVcbyB7qBe0ZxqJAakGitGOk-9K8Fo/edit?usp=sharing'>
+					{/* <a href='https://docs.google.com/document/d/10t5yWxzV1vWXKNVcbyB7qBe0ZxqJAakGitGOk-9K8Fo/edit?usp=sharing'>
+						<button>GET RESUME</button>
+					</a> */}
+					<a href='https://drive.google.com/file/d/1kCohPu50AqC8HT8lgSoBzTfrO-eBwLOL/view?fbclid=IwAR0KNAxxICDGj3mAY3qxUxW5qDvJ6qzllhAJEf9CmhLVge6VR0GCf9LFsgI'>
 						<button>GET RESUME</button>
 					</a>
 				</div>
