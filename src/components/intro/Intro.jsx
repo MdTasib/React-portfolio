@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import './intro.scss';
 import me from '../../images/me2.png';
 import arrowDown from '../../images/down.png';
@@ -25,18 +24,13 @@ function Intro() {
 		<div className='intro' id='intro'>
 			<div className='left'>
 				<div className='imgContainer'>
-					{/* <img src={me} alt='mohammad tasib' /> */}
-					<img
-						src='https://www.pngall.com/wp-content/uploads/2016/05/Man-Download-PNG.png'
-						alt='mohammad tasib'
-					/>
+					<img src={me} alt='mohammad tasib' />
 				</div>
 			</div>
 			<div className='right'>
 				<div className='wrapper'>
 					<h2>Hi There! I'm</h2>
-					{/* <h1>Mohammad Tasib</h1> */}
-					<h1>Mohammad Tanvir</h1>
+					<h1>Mohammad Tasib</h1>
 					<h3>
 						A Professional <span ref={textRef}></span>
 					</h3>
